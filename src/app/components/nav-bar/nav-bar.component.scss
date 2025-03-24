@@ -1,0 +1,20 @@
+@use '../../../styles.scss';
+
+@mixin route {
+    @apply px-3 py-2 text-sm text-white hover:text-theme-red-500 capitalize;
+}
+
+.route {
+    @include route;
+}
+
+.activated-route {
+    @include route;
+    @apply font-medium text-theme-red-500 hover:text-theme-red-600;
+}
+
+.mobile-selected {
+    span {
+        @apply border-b-2;
+    }
+}

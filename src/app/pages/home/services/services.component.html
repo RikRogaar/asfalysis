@@ -1,0 +1,26 @@
+<section name="services" class="py-20">
+    <div class="container">
+      <div class="mx-auto mb-12 max-w-[58rem] text-center">
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl" [innerHTML]="'HOME.SERVICES.TITLE' | translate"></h2>
+        <p class="mt-4 text-muted-foreground">
+          {{ 'HOME.SERVICES.DESCRIPTION' | translate }}
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        @for (card of cards; track card.title) {
+          <section hlmCard class="text-center hover:scale-105 transition-all duration-300 flex flex-col h-full">
+            <div hlmCardHeader>
+              <div>
+                <ng-icon hlm size="72px" [name]="card.icon" />
+                <h3 class="text-xl" hlmCardTitle>{{ card.title | translate }}</h3>
+              </div>
+            </div>
+            <p hlmCardContent class="flex-grow">{{ card.description | translate }}</p>
+            <div hlmCardFooter class="flex justify-center mt-auto">
+                <button hlmBtn class="bg-theme-red-500 text-white hover:bg-theme-red-600 cursor-pointer">{{ 'HOME.SERVICES.CARDS.BUTTON' | translate }} <ng-icon hlm size="16px" name="lucideChevronRight" /></button>
+            </div>
+          </section>
+        }
+      </div>
+    </div>
+</section>

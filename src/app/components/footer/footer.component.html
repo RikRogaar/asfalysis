@@ -1,0 +1,56 @@
+<footer class="border-t bg-background py-12">
+    <div class="container">
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-2 px-72">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-lg font-bold">{{ 'FOOTER.TITLES.COMMUNICATION' | translate }}</span>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li class="flex items-center gap-2 hover:text-primary cursor-pointer">
+                  <ng-icon hlm [name]="'FOOTER.COMMUNICATION.PHONE.ICON' | translate"></ng-icon>
+                  <a [href]="'tel:' + ('FOOTER.COMMUNICATION.PHONE.TEXT' | translate)">{{ 'FOOTER.COMMUNICATION.PHONE.TEXT' | translate }}</a>
+                </li>
+                <li class="flex items-center gap-2 hover:text-primary cursor-pointer">
+                  <ng-icon hlm [name]="'FOOTER.COMMUNICATION.EMAIL.ICON' | translate"></ng-icon>
+                  <a href="mailto:info@asfalysis.gr">{{ 'FOOTER.COMMUNICATION.EMAIL.TEXT' | translate }}</a>
+                </li>
+                <li class="flex items-center gap-2 hover:text-primary cursor-pointer">
+                  <ng-icon hlm [name]="'FOOTER.COMMUNICATION.WEBSITE.ICON' | translate"></ng-icon>
+                  <a [href]="'https://' + ('FOOTER.COMMUNICATION.WEBSITE.TEXT' | translate)" target="_blank">{{ 'FOOTER.COMMUNICATION.WEBSITE.TEXT' | translate }}</a>
+                </li>
+                <li class="flex items-center gap-2 hover:text-primary cursor-pointer">
+                  <ng-icon hlm [name]="'FOOTER.COMMUNICATION.YOUTUBE.ICON' | translate"></ng-icon>
+                  <a [href]="'https://www.youtube.com/' + ('FOOTER.COMMUNICATION.YOUTUBE.TEXT' | translate)" target="_blank">{{ 'FOOTER.COMMUNICATION.YOUTUBE.TEXT' | translate }}</a>
+                </li>
+            </ul>
+            <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+              <li class="flex items-start gap-2 hover:text-primary cursor-pointer">
+                  <ng-icon hlm [name]="'FOOTER.COMMUNICATION.ADDRESS.ICON' | translate"></ng-icon>
+                  <p class="flex-1">{{ 'FOOTER.COMMUNICATION.ADDRESS.TEXT' | translate }}</p>
+              </li>
+              <li class="flex items-start gap-2 hover:text-primary cursor-pointer">
+                <ng-icon hlm [name]="'FOOTER.COMMUNICATION.FACEBOOK.ICON' | translate"></ng-icon>
+                <a 
+                    [href]="'https://www.facebook.com/' + ('FOOTER.COMMUNICATION.FACEBOOK.TEXT' | translate)" 
+                    target="_blank" 
+                    class="flex-1"
+                >{{ parseUrl('FOOTER.COMMUNICATION.FACEBOOK.TEXT' | translate) }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+            <div class="flex items-center gap-2">
+                <span class="text-lg font-bold">{{ 'FOOTER.TITLES.WHERE' | translate }}</span>
+            </div>
+            
+        </div>
+      </div>
+      <div class="mt-12 border-t pt-6">
+        <p class="text-center text-sm text-muted-foreground">
+            {{ 'FOOTER.COPYRIGHT' | translate: { year } }}
+        </p>
+      </div>
+    </div>
+</footer>

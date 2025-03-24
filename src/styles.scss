@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+@use '@spartan-ng/brain/hlm-tailwind-preset.css';
+@use '@angular/cdk/overlay-prebuilt.css';
+
+@font-face {
+font-family: 'roboto';
+src: url('/assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@theme {
+    // red
+    --color-theme-red-50: #fdeae7;
+    --color-theme-red-100: #fcd9d4;
+    --color-theme-red-200: #f8afa5;
+    --color-theme-red-300: #f5897a;
+    --color-theme-red-400: #f16350;
+    --color-theme-red-500: #ee3b24;
+    --color-theme-red-600: #cc2610;
+    --color-theme-red-700: #971c0c;
+    --color-theme-red-800: #631208;
+    --color-theme-red-900: #340a04;
+    --color-theme-red-950: #180402;
+    // gray
+    --color-theme-gray-50: #ebebeb;
+    --color-theme-gray-100: #d6d6d6;
+    --color-theme-gray-200: #adadad;
+    --color-theme-gray-300: #858585;
+    --color-theme-gray-400: #5c5c5c;
+    --color-theme-gray-500: #333333;
+    --color-theme-gray-600: #292929;
+    --color-theme-gray-700: #1f1f1f;
+    --color-theme-gray-800: #141414;
+    --color-theme-gray-900: #0a0a0a;
+    --color-theme-gray-950: #050505;
+}
+
+:root {
+--font-sans: 'roboto', sans-serif;
+}
+
+:root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+    color-scheme: light;
+}
+
+.dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --ring: 0 0% 83.1%;
+    color-scheme: dark;
+}
+
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "NAVBAR": {
+        "HOME": "Αρχη"
+    },
+    "HOME": {
+        "HERO": {
+            "HERO-TEXT": "Η κάθε <span class=\"text-theme-red-500\">ΑΝΑΓΚΗ</span> έχει <span class=\"text-theme-red-500\">ΞΕΧΩΡΙΣΤΗ</span> λύση<span class=\"text-theme-red-500\">.</span>"
+        },
+        "SERVICES": {
+            "TITLE": "Οι <span class=\"text-theme-red-500\">Υπηρεσίες</span>",
+            "DESCRIPTION": "Συμβόλαια μπορεί να έχετε σε πολλές εταιρίες, σύμβουλο όμως ΕΝΑ.",
+            "CARDS": {
+                "BUTTON": "Περισσότερα",
+                "CARS": {
+                    "ICON": "",
+                    "TITLE": "Ασφάλεια Αυτοκινήτου",
+                    "DESCRIPTION": "Η ασφάλεια αυτοκινήτου είναι υποχρεωτική βάσει νόμου ως προς την κάλυψη της αστικής ευθύνης έναντι τρίτων απο το 1976, με την ψήφιση του Ν.489/76"
+                },
+                "HOME": {
+                    "ICON": "",
+                    "TITLE": "Ασφάλεια Κατοικίας",
+                    "DESCRIPTION": "Η κατοικία μας είναι ένα περιουσιακό στοιχείο όπου η Ασφάλιση της δεν είναι υποχρεωτική εκτός και αν μεσολαβεί για την απόκτησή στεγαστικό δάνειο."
+                },
+                "LIFE": {
+                    "ICON": "",
+                    "TITLE": "Ασφάλεια Ζωής",
+                    "DESCRIPTION": "Η ασφάλεια Ζωής δεν είναι ένα κουστούμι η ένα καπέλο συγκεκριμένου μεγέθους ίδιο για όλους Η Ασφάλεια Ζωής απαιτεί γνώσεις απο αυτόν που την προωθεί και πρέπει να κοπεί ...."
+                },
+                "PENSION": {
+                    "ICON": "",
+                    "TITLE": "Συνταξιοδοτικά Προγράμματα",
+                    "DESCRIPTION": "Επιτακτική ανάγκη πλέον για όσους μπορούν, να ενεργοποιήσουν όσο είναι νωρίς, ένα συνταξιοδοτικό Πρόγραμμα ώστε να εξασφαλίσου το μέλλον τους."
+                }
+            }
+        }
+    },
+    "FOOTER": {
+        "COPYRIGHT": "© {{year}} asfalysis.gr",
+        "TITLES": {
+            "COMMUNICATION": "Επικοινωνία",
+            "WHERE": "Που θα μας βρείτε"
+        },
+        "COMMUNICATION": {
+            "PHONE": {
+                "ICON": "lucidePhone",
+                "TEXT": "2310-500101"
+            },
+            "EMAIL": {
+                "ICON": "lucideMail",
+                "TEXT": "info@asfalysis.gr"
+            },
+            "WEBSITE": {
+                "ICON": "lucideGlobe",
+                "TEXT": "www.asfalysis.gr"
+            },
+            "YOUTUBE": {
+                "ICON": "lucideYoutube",
+                "TEXT": "www.youtube.com/asfalysis"
+            },
+            "ADDRESS": {
+                "ICON": "lucideMapPin",
+                "TEXT": "Β’ Πάροδος Εδέσσης 2 Θεσσαλονίκη ΤΚ 564 30"
+            },
+            "FACEBOOK": {
+                "ICON": "lucideFacebook",
+                "TEXT": "www.facebook.com/asfalysis"
+            },
+            "FACEBOOK_GROUP": {
+                "ICON": "lucideFacebook",
+                "TEXT": "www.facebook.com/groups/asfalysis"
+            }
+        }
+    }
+}

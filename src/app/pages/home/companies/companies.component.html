@@ -1,0 +1,7 @@
+<div class="flex overflow-hidden space-x-16 group bg-theme-gray-500 shadow-lg">
+        <div class="flex space-x-16 animate-loop-scroll group-hover:paused">
+        @for (company of companies; track company.name) {
+            <img loading="lazy" [src]="company.logo" class="max-w-none" [alt]="company.name" class="h-16" />
+        }
+    </div>
+</div>
